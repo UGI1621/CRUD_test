@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD_test page</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+        </style>
+    
 </head>
 <body>
     <div id="main">
-        
+
         <!-- INPUT AREA -->
         <div id="inputArea">
             <h2>Input Customer</h2>
@@ -34,10 +37,66 @@
             </form>
         </div>
         
-        
+        <!-- SEARCH AREA -->
+        <div id="searchArea">
+            <h2>Search for Edit/Del</h2>
+            <form action="" id="search">
+                <input type="text" id="search_input" placeholder="Name For Search" onsubmit="searchList();">
+                <input class="search" type="submit" value="Search">
+                 <!-- 새로고침 방지 input -->
+                <input type="text" name="" style="display: none;" id="">
+                <div style="font-size:small; color: gray;">대,소문자를 구분합니다.</div>
+            </form>
+            <br>
+
+            <!-- Search result table -->
+            <table border="1" id="result">
+                <tr>
+                    <th class="name">NAME</th>
+                    <th class="birth">BIRTH</th>
+                    <th class="sex">SEX</th>
+                    <th class="edit" colspan="2">Edit/Del</th>
+                </tr>
+            </table>
+        </div>
+
+
+
+        <!-- LIST ARAE -->
+        <div id="listArea">
+            <h2>Customer List</h2>
+            <table border="1" id="list">
+                <tr>
+                    <th>NAME</th>
+                    <th>BIRTH</th>
+                    <th>SEX</th>
+                </tr>
+                <tr>
+                    <td class="name">Tomas</td>
+                    <td class="birth">981002</td>
+                    <td class="sex">M</td>
+                </tr>
+                <tr>
+                    <td class="name">Mike</td>
+                    <td class="birth">991002</td>
+                    <td class="sex">M</td>
+                </tr>
+                <tr>
+                    <td class="name">Makers</td>
+                    <td class="birth">971002</td>
+                    <td class="sex">M</td>
+                </tr>
+                <tr>
+                    <td class="name">Aile</td>
+                    <td class="birth">961002</td>
+                    <td class="sex">F</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
 
     </div>
-    
+<script src="script.js"></script>
 </body>
 </html>
