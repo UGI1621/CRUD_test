@@ -31,3 +31,36 @@ th{
     color: white;
     background-color:skyblue;
 }
+
+
+
+/* left  */
+
+#inputArea{
+    text-align: center;
+    position: relative;
+    border: solid;
+    border-radius: 20px;
+    padding:20px;
+    height: 230px;
+}
+
+#msg{
+    color: red;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.upload{
+    position: absolute;
+    /* 움직여놓으세요 */
+    left: 325px;
+    background-color: skyblue;
+    border-style: none;
+    border-radius: 20px;
+    color: white;
+    width: 100px;
+    height: 50px;
+    font-size: large;
+}
+
