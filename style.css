@@ -8,3 +8,26 @@
 input,table{
     text-align: center;
 }
+
+input{
+    width: 120px;
+    height: 30px;
+    border-style: none;
+    border-radius: 50px;
+    background-color: #c4f4fe;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: #c4f4fe;
+}
+
+th,td{
+    border: solid white;
+    padding : 10px 5px;
+}
+
+th{
+    color: white;
+    background-color:skyblue;
+}
